@@ -16,7 +16,7 @@ app.use(express.json({ limit: '10mb' }))
 app.use(express.urlencoded({ extended: true, limit: '10mb' }))
 app.use(cookieParser())
 app.use(cors({
-    origin: config.FRONTEND_URL || "http://localhost:5173",
+    origin: config.FRONTEND_URL || "divine-frontend-kohl.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE","PATCH"],
   credentials: true
 
