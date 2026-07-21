@@ -1,0 +1,1 @@
+// Socket.IO removed — only location-based bookings kept (REST API via getNearBy endpoint)
