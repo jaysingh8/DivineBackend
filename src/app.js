@@ -32,7 +32,7 @@ app.use(passport.initialize())
 passport.use(new GoogleStrategy({
   clientID:config.GOOGLE_AUTH_API,
   clientSecret:config.GOOGLE_AUTH_SECRET,
-  callbackURL:"https://divinebackend-1-b1sy.onrender.com/api/auth/google/callback"
+  callbackURL:"/api/auth/google/callback"
 },(accessToken, refreshToken, profile, done) => {
   return done(null, profile)
 }))
