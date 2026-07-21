@@ -17,8 +17,6 @@ router.get("/getMe",authenticateUser,getMe)
 
 
 router.get("/google",passport.authenticate("google",{scope:["profile","email"]}))
-router.get("/google/callback",passport.authenticate("google",{session:false, failureRedirect:`divine-frontend-kohl.vercel.app/login`}),
-
-googleCallback)
+router.get("/google/callback",passport.authenticate("google",{session:false, failureRedirect:`divine-frontend-kohl.vercel.app/login`}),googleCallback)
 
 export default router

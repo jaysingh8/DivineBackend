@@ -160,7 +160,7 @@ export const googleCallback = async(req,res)=>{
     })
     
     // Redirect with token and user data as query params so frontend can pick them up
-    res.redirect(`${config.FRONTEND_URL}/?token=${token}&user=${encodeURIComponent(JSON.stringify({
+    res.redirect(`https://divine-frontend-kohl.vercel.app/?token=${token}&user=${encodeURIComponent(JSON.stringify({
         id: user._id,
         email: user.email,
         fullname: user.fullname,
